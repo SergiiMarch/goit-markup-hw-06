@@ -828,7 +828,6 @@ img {
 
 .modal {
   width: 528px;
-  min-height: 581px;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -863,4 +862,155 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+/* -----------------------form------------- */
+
+.form {
+  display: flex;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.title-form {
+  padding-top: 40px;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 12px;
+
+  color: #212121;
+}
+
+.form-field {
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-field label {
+  margin-bottom: 4px;
+}
+
+.form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--title-text-color);
+}
+
+.input-form {
+  margin: 0;
+  padding: 6px 10px;
+  height: 40px;
+  max-width: 100%;
+  padding-left: 42px;
+  cursor: pointer;
+}
+.input-form:focus {
+  color: #2196f3;
+}
+
+.icon-name {
+  position: absolute;
+
+  bottom: 20px;
+  left: 10px;
+  fill: var(--primary-text-color);
+}
+
+.icon-name:hover {
+  fill: currentColor;
+}
+
+.field input {
+  height: 80px;
+}
+
+.comment {
+  width: 448px;
+  height: 120px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.textarea {
+  padding: 12px 16px;
+
+  height: 138px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-label::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  padding-top: 12px;
+  padding-left: 16px;
+}
+
+.expulcion-field {
+  margin-bottom: 30px;
+}
+
+.expulcion-list {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
+  color: #2196f3;
+}
+
+.form-buttom {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  padding: 10px 52px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  width: 200px;
+  height: 50px;
+
+  background-color: var(--acent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.form-buttom:hover,
+.form-buttom:focus {
+  background-color: var(--white-text-color);
+  color: var(--acent-color);
 }

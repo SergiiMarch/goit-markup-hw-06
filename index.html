@@ -62,7 +62,7 @@
       </div>
     </header>
 
-    <!--MAIN-->
+    <!----------------------------MAIN-->
     <main class="main">
       <section class="section-hero">
         <div class="container">
@@ -108,7 +108,7 @@
         </div>
       </section>
 
-      <!--Секція Чим ми займаємось-->
+      <!--------------------------Секція Чим ми займаємось-->
       <section class="section box">
         <div class="container">
           <h2 class="box-title">Чим ми займаємося</h2>
@@ -476,6 +476,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- --------------------------bacdrop -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
@@ -483,6 +485,60 @@
             <use href="./images/symbol-defs.svg#icon-close-black"></use>
           </svg>
         </button>
+
+        <from class="form" autocomplite="on">
+          <p class="title-form">Залиште свої дані, ми вам передзвонимо</p>
+
+          <div class="form-field">
+            <label for="name" class="form-label">Ім'я</label>
+            <input type="text" class="input-form" name="user-name" id="name" />
+            <svg class="icon-name" width="18" height="18">
+              <use
+                href="./images/symbol-defs.svg#icon-person-black-18dp-1"
+              ></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <label for="tel" class="form-label">Телефон</label>
+            <input type="tel" class="input-form" name="tel" id="tel" />
+            <svg class="icon-name" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <label for="mail" class="form-label">Почта</label>
+            <input type="mail" class="input-form" name="mail" id="mail" />
+            <svg class="icon-name" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-email-black"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <label for="comment" class="form-label">Коментар</label>
+            <textarea
+              class="textarea"
+              name="comment"
+              id="comment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <div class="expulcion-field">
+            <input
+              type="checkbox"
+              name="expulcion"
+              id="expulcion"
+              class="form-expulcion"
+            />
+            <label for="expulcion"
+              >Погоджуюся з розсилкою та приймаю
+              <span class="expulcion-list">Умови договору</span></label
+            >
+          </div>
+
+          <button type="submit" class="form-buttom">Відправити</button>
+        </from>
       </div>
     </div>
     <script src="./js/modal.js"></script>
