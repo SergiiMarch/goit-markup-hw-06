@@ -474,6 +474,24 @@
             </li>
           </ul>
         </div>
+
+        <div class="subscription-box">
+          <p class="sabscriptions-text">Підпишіться на розсилку</p>
+          <label class="subscription-label">
+            <input
+              type="mail"
+              class="subscription-input"
+              name="mail"
+              placeholder="E-mail"
+            />
+          </label>
+          <button type="submit" class="subscription-btn">
+            Підписатися
+            <svg class="subscription-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
 
@@ -524,21 +542,18 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <div class="expulcion-field">
-            <input
-              type="checkbox"
-              name="expulcion"
-              id="expulcion"
-              class="form-expulcion"
-            />
-            <label for="expulcion"
-              >Погоджуюся з розсилкою та приймаю
-              <span class="expulcion-list">Умови договору</span></label
-            >
-          </div>
-
-          <button type="submit" class="form-buttom">Відправити</button>
         </from>
+        <div class="expulcion-field">
+          <label class="expulcion">
+            <input type="checkbox" name="expulcion" class="checkbox" />
+            <span class="icon-span"></span>
+
+            Погоджуюся з розсилкою та приймаю
+            <span class="expulcion-list">Умови договору</span>
+          </label>
+        </div>
+
+        <button type="submit" class="form-buttom">Відправити</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
