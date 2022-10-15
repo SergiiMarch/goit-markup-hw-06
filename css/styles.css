@@ -715,6 +715,7 @@ img {
 .subscription-label {
   display: flex;
   align-items: baseline;
+  outline: none;
 }
 
 .subscription-input::placeholder {
@@ -737,6 +738,8 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: var(--footer-color);
+
+  outline: none;
 }
 
 .subscription-btn {
@@ -1060,6 +1063,8 @@ img {
 
   transition: border var(--transition-duration)
     var(--transition-timing-function);
+
+  outline: none;
 }
 
 /* .form-field:focus-within > .textarea {
