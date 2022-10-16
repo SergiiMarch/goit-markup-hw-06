@@ -474,24 +474,25 @@
             </li>
           </ul>
         </div>
-
         <div class="subscription-box">
           <p class="sabscriptions-text">Підпишіться на розсилку</p>
-          <label class="subscription-label">
-            <input
-              type="mail"
-              class="subscription-input"
-              name="mail"
-              placeholder="E-mail"
-            />
-          </label>
+          <form class="footer-form">
+            <label class="subscription-label">
+              <input
+                type="mail"
+                class="subscription-input"
+                name="mail"
+                placeholder="E-mail"
+              />
+            </label>
 
-          <button type="submit" class="subscription-btn">
-            Підписатися
-            <svg class="subscription-icon" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-            </svg>
-          </button>
+            <button type="submit" class="subscription-btn">
+              Підписатися
+              <svg class="subscription-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -543,16 +544,17 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
-        </from>
-        <div class="expulcion-field">
-          <label class="expulcion">
-            <input type="checkbox" name="expulcion" class="checkbox" />
-            <span class="icon-span"></span>
 
-            Погоджуюся з розсилкою та приймаю
-            <span class="expulcion-list">Умови договору</span>
-          </label>
-        </div>
+          <div class="expulcion-field">
+            <label class="expulcion">
+              <input type="checkbox" name="expulcion" class="checkbox" />
+              <span class="icon-span"></span>
+
+              <span class="field-list">Погоджуюся з розсилкою та приймаю</span>
+              <span class="expulcion-list">Умови договору</span>
+            </label>
+          </div>
+        </from>
 
         <button type="submit" class="form-buttom">Відправити</button>
       </div>

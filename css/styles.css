@@ -691,30 +691,28 @@ img {
 
 /* --------------------------------FOOTER_FORM */
 
+.footer-form {
+  display: flex;
+}
+
 .subscription-box {
   display: block;
-  margin-left: 93px;
-
-  position: relative;
+  margin-left: auto;
 }
 
 .sabscriptions-text {
   margin-bottom: 20px;
 
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--white-text-color);
 }
 
 .subscription-label {
-  display: flex;
-  align-items: baseline;
   outline: none;
 }
 
@@ -733,6 +731,7 @@ img {
 .subscription-input {
   width: 358px;
   height: 50px;
+  padding-left: 16px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -762,10 +761,10 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  position: absolute;
+  /* position: absolute;
   top: 37px;
   left: 50%;
-  transform: translateX(180px);
+  transform: translateX(180px); */
 
   transition: background-color var(--transition-duration)
       var(--transition-timing-function),
@@ -923,6 +922,8 @@ img {
 }
 
 .modal {
+  padding-left: 40px;
+  padding: 40px;
   width: 528px;
 
   background-color: var(--white-text-color);
@@ -970,15 +971,12 @@ img {
 .form {
   display: flex;
 
-  padding-left: 40px;
-  padding-right: 40px;
   flex-direction: column;
   align-content: center;
   justify-content: flex-start;
 }
 
 .title-form {
-  padding-top: 40px;
   text-align: center;
 
   font-weight: 700;
@@ -993,11 +991,13 @@ img {
 }
 
 .form-field {
-  margin-bottom: 0px;
-  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+.form-field:not(last-child) {
+  margin-bottom: 10px;
 }
 
 .form-label {
@@ -1041,9 +1041,9 @@ img {
 
 .icon-name {
   position: absolute;
-  top: 55%;
+  top: 65%;
   left: 12px;
-  transform: translateY(-55%);
+  transform: translateY(-65%);
   display: inline-block;
 
   transition: fill var(--transition-duration) var(--transition-timing-function);
@@ -1089,6 +1089,7 @@ img {
   align-items: center;
 
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .expulcion {
@@ -1121,6 +1122,15 @@ img {
   position: absolute;
 }
 
+.field-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
 .expulcion-list {
   font-weight: 400;
   font-size: 14px;
@@ -1136,7 +1146,6 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
   padding: 10px 52px;
   text-align: center;
 
@@ -1149,12 +1158,10 @@ img {
 
   color: var(--white-text-color);
 
-  width: 200px;
-  height: 50px;
-
   background-color: var(--acent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 
   transition: background-color var(--transition-duration)
       var(--transition-timing-function),
