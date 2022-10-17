@@ -758,7 +758,7 @@ img {
   background-color: var(--acent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
+  border: none;
   /* position: absolute;
   top: 37px;
   left: 50%;
@@ -1039,9 +1039,9 @@ img {
 
 .icon-name {
   position: absolute;
-  top: 65%;
+  top: 70%;
   left: 12px;
-  transform: translateY(-65%);
+  transform: translateY(-70%);
   display: inline-block;
 
   transition: fill var(--transition-duration) var(--transition-timing-function);
@@ -1049,9 +1049,10 @@ img {
 
 .textarea {
   padding: 12px 16px;
+  margin-bottom: 20px;
   resize: none;
 
-  height: 138px;
+  height: 120px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -1087,7 +1088,6 @@ img {
   align-items: center;
 
   margin-bottom: 30px;
-  margin-top: 20px;
 }
 
 .expulcion {
